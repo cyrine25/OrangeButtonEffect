@@ -19,6 +19,7 @@ button::before{
   content: "";
   position: absolute;
   bottom: 0; 
+  z-index: -1;
   right:100%;
   transition: all 0.5s ease-out;
   background-color: #ed5107;
@@ -26,5 +27,10 @@ button::before{
   height: 100%;
 }
 button:hover::before{
- right:0%
+ right:0%;
+ 
+}
+button:hover{
+  transition: all 0.5s ease-out;
+  color: black;
 }
